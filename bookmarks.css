@@ -1,0 +1,68 @@
+/* media-query */
+@media screen and (max-width:576px) and (max-width:768px){
+    #first h1 , th{
+        font-size: 10px;}
+    #all input[type="text"]{
+    font-size: 10px;}
+    #searchProduct{
+        font-size: 10px;
+    }
+    #tableBody , input[type="text"] {
+        font-size: 10px;
+    }
+    #tableBody ,
+    .btn{
+        font-size: 10px;
+    }
+    h4 , label ,.btn{
+    font-size: 10px;}
+}    
+
+
+/* end-media-query */
+
+/* ST-bookmarker style */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+body{
+    min-height:100vh;
+    background-color: #0E101F;
+    color: #FFFFFF;
+    margin: 40px;
+}
+ul{
+
+    flex-direction:column;
+    gap:70px;
+}
+ul li{
+    list-style:none;
+    position:relative;
+}
+ul li a{
+    position:relative;
+    text-decoration:none;
+    font-size:3em;
+    line-height:2em;
+    letter-spacing:2px;
+    color:transparent;
+    -webkit-text-stroke:1px var(--clr);
+}
+ul li a::before{
+    content:attr(data-text);
+    position:absolute;
+    color:var(--clr);
+    width:0px;
+    overflow:hidden;
+    transition:1s;
+    border-right:8px solid var(--clr);
+}
+ul li a:hover::before{
+    width:100%;
+filter:drop-shadow(7px -12px 50px var(--clr));
+}    
+/* END-bookmarker style */
+hr {
+    background-color: #FFFFFF;
+    border-top:3px dotted #000;
+    /*Rest of stuff here*/
+}

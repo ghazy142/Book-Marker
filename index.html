@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmarks</title>
+    <link rel="stylesheet" href="./all.min.css">
+    <link rel="stylesheet" href="./bootstrap.css">
+    <link rel="stylesheet" href="./bootstrap.min.css">
+    <link rel="stylesheet" href="./bookmarks.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lumanosimo&display=swap" rel="stylesheet">
+<script src="./bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="first">
+            <ul>
+                <li style="--clr:#6010eb">
+                <h1 style="text-align: center;"><a href="#" data-text="&nbsp;">&nbsp;BOOKMARKER&nbsp;</a></h1>
+                </li>
+            </ul>
+        </div>
+        <hr>
+        <div id="all" class="w-50 m-auto">
+        <h4 style="text-align:center;"> Bookmark your favorite sites</h4>
+        <label for="productName">Site Name:</label>
+        <input type="text" id="productName" class="form-control mb-3" />
+        <label for="productCategory">Site URL:</label>
+        <input type="text" id="productCategory" class="form-control mb-3" />
+        </div>
+        <hr>
+        <div class=" d-grid gap-2 col-6 mx-auto">
+        <button class="w-50 m-auto btn btn-primary btn-lg"  id="sub">Submit</button>
+        <button class="w-50 m-auto gap-2 btn btn-danger btn-lg" onclick="Reset()">Reset</button>  
+        </div> 
+    </div>
+    <input class="form-control w-50 m-auto" onkeyup="searchProd()" type="text" id="searchProduct" placeholder="search...">
+    <div class="container" id="first">
+        <table class="w-75 m-auto my-5">
+            <thead>
+                    <th >Index</th>
+                    <th >Website Name</th>
+                    <th >Visit</th>
+                    <th >Update</th>
+                    <th >Delete</th>
+            </thead>
+            <tbody id="tableBody">
+            </tbody>
+        </table>
+    </div>
+    
+
+    <script src="./booksmarks.js"></script>
+</body>
+</html>
